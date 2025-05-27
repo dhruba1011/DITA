@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YCTC - HABRA - DDTA Course</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+  
+  <main class="container">
+<h3 style="text-align: left;"><span style="background-color: #fcff01; color: #2b00fe;">Assignment 1</span></h3>
+<p>1. Create the table and solve the following problems given below:</p>
+<p>Database Name: School.accdb (change the name if exists)</p>
+<p>Table Name: Student_Details</p>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Field Name</th>
+    <th>Data Type</th>
+    <th>Field Size</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>REG_NO [PK]</td>
+    <td>TEXT</td>
+    <td>30</td>
+    <td>Registration Number of the student</td>
+  </tr>
+  <tr>
+    <td>S_NAME</td>
+    <td>TEXT</td>
+    <td>50</td>
+    <td>Student Name</td>
+  </tr>
+  <tr>
+    <td>F_NAME</td>
+    <td>TEXT</td>
+    <td>50</td>
+    <td>Father's Name</td>
+  </tr>
+  <tr>
+    <td>ADDRESS</td>
+    <td>TEXT</td>
+    <td>50</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PHONE</td>
+    <td>NUMBER</td>
+    <td>Double</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>COURSE</td>
+    <td>TEXT</td>
+    <td>20</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>BATCH</td>
+    <td>NUMBER</td>
+    <td>Long Integer</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PAPER1</td>
+    <td>NUMBER</td>
+    <td>Long Integer</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PAPER2</td>
+    <td>NUMBER</td>
+    <td>Long Integer</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TOTAL</td>
+    <td>NUMBER</td>
+    <td>Long Integer</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AVG</td>
+    <td>NUMBER</td>
+    <td>Long Integer</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>GRADE</td>
+    <td>TEXT</td>
+    <td>2</td>
+    <td></td>
+  </tr>
+</table>
+
+<ol>
+  <li>REG_NO must be in format - "YS-HBA/_ _ _ _/20_ _"</li>
+  <li>S_NAME &amp; F_NAME would be in Upper Case.</li>
+  <li>S_NAME &amp; F_NAME cannot be blank.</li>
+  <li>S_NAME would be shown as STUDENT NAME.</li>
+  <li>PHONE should be 10-digit otherwise show Message - "Invalid Phone Number".</li>
+  <li>COURSE would be - ADITA, ADFAS, ADDTP (using Lookup Wizard)</li>
+  <li>Add 10 Records in the table.</li>
+  <li>Calculate TOTAL, AVG &amp; GRADE. [AVG >=80, "A", AVG >=60, "B", AVG >=40, "C", AVG < 40, "D"]</li>
+  <li>Display those records who's Name start with 'S' &amp; Total more than 120.</li>
+  <li>Make a new table with fields of S_NAME, F_NAME, ADDRESS &amp; COURSE who's COURSE is ADITA &amp; ADFAS.</li>
+  <li>Append REG_NO, S_NAME &amp; TOTAL into a new table.</li>
+  <li>Find those records whose S_NAME is same.</li>
+  <li>Delete those records whose GRADE is 'D'.</li>
+  <li>Create a Form using Form Design with fields of REG_NO, S_NAME, F_NAME, ADDRESS, PHONE, COURSE &amp; BATCH.</li>
+  <li>Create a Form using Form Wizard and show the fields REG_NO, S_NAME, PAPER1, PAPER2, TOTAL, AVG &amp; GRADE (calculate TOTAL, AVG and GRADE from FORM)</li>
+  <li>Create a Report using Report Design with fields of S_NAME, PAPER1, PAPER2, TOTAL, AVG &amp; GRADE in Descending order by TOTAL.</li>
+</ol>
+
+<hr>
+
+<h3><span style="background-color: #fcff01; color: #2b00fe;">Assignment 2</span></h3>
+<p>2. Create a table and solve the following problems given below:</p>
+<p>Database Name: EMPLOYEE.accdb (change the name if exists)</p>
+<p>Table Name: Emp_List</p>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Field Name</th>
+    <th>Data Type</th>
+    <th>Field Size</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>EMP_ID [PK]</td>
+    <td>Text</td>
+    <td>5</td>
+    <td>Input Employee ID</td>
+  </tr>
+  <tr>
+    <td>E_NAME</td>
+    <td>Text</td>
+    <td>30</td>
+    <td>Employee Name</td>
+  </tr>
+  <tr>
+    <td>ADDRESS</td>
+    <td>Memo</td>
+    <td>.</td>
+    <td>Employee Address</td>
+  </tr>
+  <tr>
+    <td>DOB</td>
+    <td>Date/Time</td>
+    <td></td>
+    <td>Date of Birth</td>
+  </tr>
+  <tr>
+    <td>DOJ</td>
+    <td>Date/Time</td>
+    <td></td>
+    <td>Date of Joining</td>
+  </tr>
+  <tr>
+    <td>BASIC</td>
+    <td>Currency</td>
+    <td></td>
+    <td>Decimal Places: 2</td>
+  </tr>
+  <tr>
+    <td>DA</td>
+    <td>Currency</td>
+    <td></td>
+    <td>Decimal Places: 2</td>
+  </tr>
+  <tr>
+    <td>PF</td>
+    <td>Currency</td>
+    <td></td>
+    <td>Decimal Places: 2</td>
+  </tr>
+  <tr>
+    <td>GROSS</td>
+    <td>Currency</td>
+    <td></td>
+    <td>Decimal Places: 2</td>
+  </tr>
+  <tr>
+    <td>NET</td>
+    <td>Currency</td>
+    <td></td>
+    <td>Decimal Places: 2</td>
+  </tr>
+  <tr>
+    <td>PHOTO</td>
+    <td>Hyperlink</td>
+    <td></td>
+    <td>Employee Recent Photo</td>
+  </tr>
+  <tr>
+    <td>BIO-DATA</td>
+    <td>Attachment</td>
+    <td></td>
+    <td>Employee Updated CV</td>
+  </tr>
+</table>
+
+<ol>
+  <li>EMP_ID must be in format - "EMP-_ _ _"</li>
+  <li>E_NAME would be in Upper Case &amp; cannot be blank.</li>
+  <li>DOB should be less than current date &amp; DOJ should be greater than year 2000.</li>
+  <li>BASIC would be in between 15000 to 25000.</li>
+  <li>Insert Employee Photo using Hyperlink.</li>
+  <li>Add Employee Bio-Data using Attachment.</li>
+  <li>Add 10 Records in the table.</li>
+  <li>Calculate DA, PF, GROSS &amp; NET. [DA: 75% of BASIC, PF: 12% of BASIC, GROSS: BASIC + DA, NET: GROSS - PF]</li>
+  <li>Display those records whose ADDRESS is 'Kolkata' &amp; Gross more than 20000.</li>
+  <li>Make a new table with fields of E_NAME, DOJ &amp; NET whose PF is below 10,000.</li>
+  <li>Find those records whose BASIC is same.</li>
+  <li>Delete those records whose DOJ is less than 01/01/2010.</li>
+  <li>Create a Form using Form Design with fields of EMP_ID, ADDRESS, DOJ &amp; BASIC whose BASIC less than 18,000, Fill Color should be Red.</li>
+  <li>Create a Report using Wizard with fields of E_NAME, DOJ, GROSS &amp; NET.</li>
+</ol>
+
+<hr>
+
+<h3><span style="background-color: #fcff01; color: #2b00fe;">Assignment 3</span></h3>
+<p>3. Create Relationship among the tables given below:</p>
+<p>Database Name: Relation.accdb (change the name if exists)</p>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th colspan="2">Table: Head_Office</th>
+    <th rowspan="5"></th>
+    <th colspan="2">Table: Distributor</th>
+    <th rowspan="5"></th>
+    <th colspan="2">Table: Customer</th>
+  </tr>
+  <tr>
+    <th>Field Name</th>
+    <th>Data Type</th>
+    <th>Field Name</th>
+    <th>Data Type</th>
+    <th>Field Name</th>
+    <th>Data Type</th>
+  </tr>
+  <tr>
+    <td>Product_ID [PK]</td>
+    <td>Text</td>
+    <td>Product_ID [PK]</td>
+    <td>Text</td>
+    <td>Cust_ID [PK]</td>
+    <td>Text</td>
+  </tr>
+  <tr>
+    <td>P_Name</td>
+    <td>Text</td>
+    <td>Delivery_Date</td>
+    <td>Date/Time</td>
+    <td>C_Address</td>
+    <td>Text</td>
+  </tr>
+  <tr>
+    <td>Price</td>
+    <td>Number</td>
+    <td>Cust_Phone</td>
+    <td>Number</td>
+    <td>Product_ID [FK]</td>
+    <td>Text</td>
+  </tr>
+</table>
+
+<ol>
+  <li>Add 3 Records in each table.</li>
+  <li>Create relationship [One to One &amp; One to Many]</li>
+</ol>
+
+<hr>
+
+<h3><span style="background-color: #fcff01; color: #2b00fe;">Assignment 4</span></h3>
+<p>4. Create the following table:</p>
+<p>Table: SALES_REPORT</p>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Field Name</th>
+    <th>Data Type</th>
+    <th>Field Size</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>S_MONTH</td>
+    <td>TEXT</td>
+    <td>50</td>
+    <td>Sales Month</td>
+  </tr>
+  <tr>
+    <td>S_MAN</td>
+    <td>TEXT</td>
+    <td>100</td>
+    <td>Salesman Name</td>
+  </tr>
+  <tr>
+    <td>Qty</td>
+    <td>NUMBER</td>
+    <td></td>
+    <td>Quantity</td>
+  </tr>
+</table>
+
+<p>Add 10 records in the table and make a crosstab query to show the records.</p>
+    
+  </main>
+  
+  <div id="footer"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
